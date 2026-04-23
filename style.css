@@ -6,7 +6,13 @@
 
 *,*::before,*::after{box-sizing:border-box}
 html,body{margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+  background:#0a2fb8;                       /* fills iOS safe-area with brand blue */
+  overscroll-behavior-y:none;               /* no bounce → no content bleed */
+  -webkit-overflow-scrolling:touch;
+}
+body{overscroll-behavior-y:none}
 
 :root{
   /* base — brighter BIOS blue, shifted toward cyan */
