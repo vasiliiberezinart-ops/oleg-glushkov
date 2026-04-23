@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b52e0">
+<title>GLUSHKOV.BIOS — Олег Глушков / Oleg Glushkov / Oleg Glusjkov</title>
+<meta name="description" content="Oleg Glushkov — director, choreographer, GITIS teacher. MAT, Fomenko Workshop, Theatre of Nations, Lenkom. Stilyagi, Bolshoi. Aida — Metropolitan Opera 2024/25. Hedda-nominated.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&amp;family=VT323&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crt" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- Boot -->
+<div id="boot" class="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <pre class="boot-logo">
+╔══════════════════════════════════════════════════════════════╗
+║   GLUSHKOV // SETUP UTILITY                  v.2026.04       ║
+║   (C) 1978 — present · OMSK → MOSCOW → WORLD                 ║
+╚══════════════════════════════════════════════════════════════╝</pre>
+    <div class="boot-log" id="bootLog"></div>
+  </div>
+</div>
+
+<!-- Top status bar -->
+<header class="statusbar statusbar--top">
+  <div class="sb-group">
+    <span class="sb-dot"></span>
+    <span class="sb-label">SYSTEM</span>
+    <span class="sb-value">GLUSHKOV.BIOS v.2026.04</span>
+  </div>
+  <div class="sb-group sb-center">
+    <span class="sb-label t"><i lang="ru">РОЛЬ</i><i lang="en">ROLE</i><i lang="no">ROLLE</i></span>
+    <span class="sb-value sb-blink-soft t">
+      <i lang="ru">РЕЖИССЁР · ХОРЕОГРАФ · ПЕДАГОГ</i>
+      <i lang="en">DIRECTOR · CHOREOGRAPHER · TEACHER</i>
+      <i lang="no">REGISSØR · KOREOGRAF · PEDAGOG</i>
+    </span>
+  </div>
+  <div class="sb-group sb-right">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ru" aria-current="true">RU</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="no">NO</button>
+    </div>
+    <span class="sb-label">CLK</span>
+    <span class="sb-value" id="clock">--:--:--</span>
+  </div>
+</header>
+
+<!-- Tabs -->
+<nav class="tabs" role="tablist">
+  <button class="tab" role="tab" data-target="main" aria-selected="true"><span class="tab-key">F1</span><span class="tab-name t"><i lang="ru">ГЛАВНОЕ</i><i lang="en">MAIN</i><i lang="no">HOVED</i></span></button>
+  <button class="tab" role="tab" data-target="bio"><span class="tab-key">F2</span><span class="tab-name t"><i lang="ru">БИО</i><i lang="en">BIO</i><i lang="no">BIO</i></span></button>
+  <button class="tab" role="tab" data-target="theatre"><span class="tab-key">F3</span><span class="tab-name t"><i lang="ru">ТЕАТР</i><i lang="en">THEATRE</i><i lang="no">TEATER</i></span></button>
+  <button class="tab" role="tab" data-target="film"><span class="tab-key">F4</span><span class="tab-name t"><i lang="ru">КИНО</i><i lang="en">FILM</i><i lang="no">FILM</i></span></button>
+  <button class="tab" role="tab" data-target="opera"><span class="tab-key">F5</span><span class="tab-name">OPERA</span></button>
+  <button class="tab" role="tab" data-target="teaching"><span class="tab-key">F6</span><span class="tab-name t"><i lang="ru">ПЕДАГОГИКА</i><i lang="en">TEACHING</i><i lang="no">UNDERVISN</i></span></button>
+  <button class="tab" role="tab" data-target="press"><span class="tab-key">F7</span><span class="tab-name t"><i lang="ru">ПРЕССА</i><i lang="en">PRESS</i><i lang="no">PRESSE</i></span></button>
+  <button class="tab" role="tab" data-target="exit"><span class="tab-key">F10</span><span class="tab-name t"><i lang="ru">ВЫХОД</i><i lang="en">EXIT</i><i lang="no">AVSLUTT</i></span></button>
+</nav>
+
+<main class="screen" id="screen">
+
+  <!-- MAIN -->
+  <section class="page active" id="main" role="tabpanel">
+    <div class="panel panel--hero">
+      <div class="hero">
+        <div class="hero-head">
+          <span class="crumb">&gt; system / main</span>
+          <span class="crumb crumb--ok">OK</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="hero-ru t"><i lang="ru">ОЛЕГ ГЛУШКОВ</i><i lang="en">OLEG GLUSHKOV</i><i lang="no">OLEG GLUSJKOV</i></span>
+          <span class="hero-en">OLEG · GLUSHKOV · GLUSJKOV</span>
+        </h1>
+        <div class="hero-tag t">
+          <i lang="ru">// режиссёр &middot; хореограф &middot; педагог</i>
+          <i lang="en">// director &middot; choreographer &middot; teacher</i>
+          <i lang="no">// regissør &middot; koreograf &middot; pedagog</i>
+        </div>
+
+        <div class="kv">
+          <div class="kv-row">
+            <span class="kv-k t"><i lang="ru">ИМЯ</i><i lang="en">NAME</i><i lang="no">NAVN</i></span>
+            <span class="kv-dots"></span>
+            <span class="kv-v t">
+              <i lang="ru">Олег Игоревич Глушков</i>
+              <i lang="en">Oleg Igorevich Glushkov</i>
+              <i lang="no">Oleg Igorevitsj Glusjkov</i>
+            </span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-k t"><i lang="ru">РОЖДЕН</i><i lang="en">BORN</i><i lang="no">FØDT</i></span>
+            <span class="kv-dots"></span>
+            <span class="kv-v t">
+              <i lang="ru">26.12.1978 · Омск, СССР</i>
+              <i lang="en">26.12.1978 · Omsk, USSR</i>
+              <i lang="no">26.12.1978 · Omsk, USSR</i>
+            </span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-k t"><i lang="ru">БАЗА</i><i lang="en">BASE</i><i lang="no">BASE</i></span>
+            <span class="kv-dots"></span>
+            <span class="kv-v t">
+              <i lang="ru">Москва · Нью-Йорк · мир</i>
+              <i lang="en">Moscow · New York · the world</i>
+              <i lang="no">Moskva · New York · verden</i>
+            </span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-k t"><i lang="ru">ШКОЛА</i><i lang="en">SCHOOL</i><i lang="no">SKOLE</i></span>
+            <span class="kv-dots"></span>
+            <span class="kv-v t">
+              <i lang="ru">РАТИ / ГИТИС · мастерская Л.М. Таланкиной</i>
+              <i lang="en">RATI / GITIS · L.M. Talankina workshop</i>
+              <i lang="no">RATI / GITIS · L.M. Talankinas verksted</i>
+            </span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-k t"><i lang="ru">ПРЕПОДАЁТ</i><i lang="en">TEACHES</i><i lang="no">UNDERVISER</i></span>
+            <span class="kv-dots"></span>
+            <span class="kv-v t">
+              <i lang="ru">ГИТИС с 2002 · курсы Кудряшова, Женовача, Каменьковича-Крымова, Хейфеца</i>
+              <i lang="en">GITIS since 2002 · Kudryashov, Zhenovach, Kamenkovich-Krymov, Kheifets workshops</i>
+              <i lang="no">GITIS siden 2002 · Kudrjasjov-, Zjenovatsj-, Kamenkovitsj-Krymov-, Kheifets-verksteder</i>
+            </span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-k t"><i lang="ru">НАГРАДЫ</i><i lang="en">AWARDS</i><i lang="no">PRISER</i></span>
+            <span class="kv-dots"></span>
+            <span class="kv-v t">
+              <i lang="ru"><a href="https://www.goldenmask.ru/pers_1331.html" target="_blank" rel="noopener">Золотая Маска</a> · Премия Правительства РФ · ном. Hedda (Норвегия) · Звезда Театрала</i>
+              <i lang="en"><a href="https://www.goldenmask.ru/pers_1331.html" target="_blank" rel="noopener">Golden Mask</a> · Russian Government Prize · Hedda nomination (Norway) · Star of Theatrical</i>
+              <i lang="no"><a href="https://www.goldenmask.ru/pers_1331.html" target="_blank" rel="noopener">Gullmasken</a> · Russlands regjeringspris · Hedda-nominasjon · Stjerne i Teatralen</i>
+            </span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-k t"><i lang="ru">СТАТУС</i><i lang="en">STATUS</i><i lang="no">STATUS</i></span>
+            <span class="kv-dots"></span>
+            <span class="kv-v status--active t"><i lang="ru">АКТИВЕН</i><i lang="en">ACTIVE</i><i lang="no">AKTIV</i></span>
+          </div>
+        </div>
+
+        <div class="hero-marquee">
+          <div class="marq">
+            <span>&raquo; STILYAGI ·</span>
+            <span>&raquo; OTTEPEL ·</span>
+            <span>&raquo; BOLSHOI ·</span>
+            <span>&raquo; SEREZHA / MAT ·</span>
+            <span>&raquo; GIPNOS / GITIS ·</span>
+            <span>&raquo; BLUE BLUE BIRD / NATIONS ·</span>
+            <span>&raquo; AIDA / THE MET 2024/25 ·</span>
+            <span>&raquo; PEER GYNT / NORWEGIAN NATIONAL OPERA ·</span>
+            <span>&raquo; DIDO &amp; AENEAS / NATIONALTHEATRET OSLO ·</span>
+            <span>&raquo; MISANTROPEN / ROGALAND ·</span>
+            <span>&raquo; BLACK RIDER / HÅLOGALAND ·</span>
+            <span>&raquo; HEDDA NOM. ·</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid--3">
+      <a class="tile" href="#theatre" data-jump="theatre">
+        <div class="tile-num">03</div>
+        <div class="tile-title t"><i lang="ru">ТЕАТР</i><i lang="en">THEATRE</i><i lang="no">TEATER</i></div>
+        <div class="tile-meta t">
+          <i lang="ru">30+ постановок · МХТ · Фоменки · Наций · Ленком · РАМТ · Пушкинский</i>
+          <i lang="en">30+ productions · MAT · Fomenko Workshop · Nations · Lenkom · RAMT · Pushkin</i>
+          <i lang="no">30+ oppsetninger · MAT · Fomenko-verkstedet · Nations · Lenkom · RAMT · Pusjkin</i>
+        </div>
+        <div class="tile-cta">[ENTER] &#x25B6;</div>
+      </a>
+      <a class="tile" href="#film" data-jump="film">
+        <div class="tile-num">04</div>
+        <div class="tile-title t"><i lang="ru">КИНО</i><i lang="en">FILM</i><i lang="no">FILM</i></div>
+        <div class="tile-meta t">
+          <i lang="ru">Стиляги · Оттепель · Большой · Парень с нашего кладбища · Лёд</i>
+          <i lang="en">Hipsters · The Thaw · Bolshoi · Guy from Our Cemetery · Ice</i>
+          <i lang="no">Stilyagi · Opptiningen · Bolsjoj · Gutten fra kirkegården · Is</i>
+        </div>
+        <div class="tile-cta">[ENTER] &#x25B6;</div>
+      </a>
+      <a class="tile" href="#opera" data-jump="opera">
+        <div class="tile-num">05</div>
+        <div class="tile-title">OPERA</div>
+        <div class="tile-meta t">
+          <i lang="ru">The Met · Аида 2024/25 · Norwegian National Opera · Peer Gynt · Чародейка · Русалка · Пиковая дама</i>
+          <i lang="en">The Met · Aida 2024/25 · Norwegian National Opera · Peer Gynt · The Enchantress · Rusalka · Queen of Spades</i>
+          <i lang="no">The Met · Aida 2024/25 · Den Norske Opera · Peer Gynt · Trollkvinnen · Rusalka · Spar dame</i>
+        </div>
+        <div class="tile-cta">[ENTER] &#x25B6;</div>
+      </a>
+    </div>
+
+    <div class="grid grid--3">
+      <a class="tile" href="#teaching" data-jump="teaching">
+        <div class="tile-num">06</div>
+        <div class="tile-title t"><i lang="ru">ПЕДАГОГИКА</i><i lang="en">TEACHING</i><i lang="no">UNDERVISN.</i></div>
+        <div class="tile-meta t">
+          <i lang="ru">ГИТИС с 2002 · «действие в танце» · курсы Кудряшова, Женовача, Каменьковича-Крымова</i>
+          <i lang="en">GITIS since 2002 · «action-in-dance» · Kudryashov, Zhenovach, Kamenkovich-Krymov courses</i>
+          <i lang="no">GITIS siden 2002 · «handling i dans» · Kudrjasjov, Zjenovatsj, Kamenkovitsj-Krymov</i>
+        </div>
+        <div class="tile-cta">[ENTER] &#x25B6;</div>
+      </a>
+      <a class="tile" href="#theatre" data-jump="theatre" style="border-color:var(--accent-2)">
+        <div class="tile-num">07</div>
+        <div class="tile-title">NORWAY</div>
+        <div class="tile-meta t">
+          <i lang="ru">Nationaltheatret · Rogaland · Hålogaland · Den Nationale Scene · Det Norske · премия Hedda</i>
+          <i lang="en">Nationaltheatret · Rogaland · Hålogaland · Den Nationale Scene · Det Norske · Hedda Award</i>
+          <i lang="no">Nationaltheatret · Rogaland · Hålogaland · Den Nationale Scene · Det Norske · Heddaprisen</i>
+        </div>
+        <div class="tile-cta">[ENTER] &#x25B6;</div>
+      </a>
+      <a class="tile" href="#press" data-jump="press">
+        <div class="tile-num">08</div>
+        <div class="tile-title t"><i lang="ru">ПРЕССА</i><i lang="en">PRESS</i><i lang="no">PRESSE</i></div>
+        <div class="tile-meta t">
+          <i lang="ru">The Blueprint · Афиша Daily · МХТ · Театр Наций · Фоменки · Operabase · IMDb</i>
+          <i lang="en">The Blueprint · Afisha Daily · MAT · Theatre of Nations · Fomenko · Operabase · IMDb</i>
+          <i lang="no">The Blueprint · Afisja Daily · MAT · Nasjonenes Teater · Fomenko · Operabase · IMDb</i>
+        </div>
+        <div class="tile-cta">[ENTER] &#x25B6;</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="page" id="bio" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <span class="crumb">&gt; system / bio</span>
+        <span class="crumb">LOAD 100%</span>
+      </div>
+      <h2 class="h2 t"><i lang="ru">БИОГРАФИЯ.DAT</i><i lang="en">BIOGRAPHY.DAT</i><i lang="no">BIOGRAFI.DAT</i></h2>
+
+      <div class="prose t">
+        <i lang="ru">
+          <p><span class="drop">Р</span>одился 26 декабря 1978 года в Омске. Родители — археологи-специалисты по экспериментальной археологии, то есть люди, восстанавливающие древние ремёсла через действие. Эта точка отсчёта — действие как способ понять мир — пройдёт через всю его работу.</p>
+          <p>Окончил хореографическое отделение Омского областного колледжа культуры и искусства, работал артистом балета Омского музыкального театра. В 1998 году поступил в ГИТИС на балетмейстерский факультет, мастерская <b>Лилии Таланкиной</b>. Во время учёбы — Сургутский музыкально-драматический театр.</p>
+          <p>С 2002 года преподаёт в ГИТИС сценическое движение на режиссёрских и актёрских курсах: <b>О.Л. Кудряшов</b>, <b>С.В. Женовач</b>, <b>М.А. Захаров</b>, <b>Л.Е. Хейфец</b>, позднее — <b>Е.Б. Каменькович и Д.А. Крымов</b>. В мастерской Кудряшова ввёл дисциплину «действие в танце». В 2019 году набрал собственный курс на факультете музыкального театра ГИТИС.</p>
+          <p>Работает хореографом и постановщиком пластики с ключевыми режиссёрами поколения: <b>Кирилл Серебренников</b>, <b>Юрий Бутусов</b>, <b>Дмитрий Крымов</b>, <b>Виктор Рыжаков</b>, <b>Иван Поповски</b>, <b>Марк Захаров</b>. Ставит собственные спектакли в МХТ, Театре Наций, Мастерской Фоменко, Ленкоме. В кино — «Стиляги», «Оттепель», «Большой», «Лёд». Пять лет работы в норвежском театре — номинация на премию <b>Hedda</b>. В 2024 году дебют в <a href="https://www.metopera.org/season/in-cinemas/2024-25-season/aida/" target="_blank" rel="noopener">Metropolitan Opera — «Аида»</a> режиссёра Майкла Майера.</p>
+        </i>
+        <i lang="en">
+          <p><span class="drop">B</span>orn 26 December 1978 in Omsk, Siberia. His parents were archaeologists specialising in experimental archaeology — people who recover ancient crafts through physical action. That starting point — action as a way of understanding the world — runs through his entire body of work.</p>
+          <p>Trained at the ballet studio of the Omsk Music Theatre, then worked there as a ballet dancer. In 1998 entered GITIS — the Russian Institute of Theatre Arts — into the choreographers' workshop of <b>Lilia Talankina</b>. During his studies he worked at the Surgut Music and Drama Theatre.</p>
+          <p>Since 2002 he has taught stage movement at GITIS — in the workshops of <b>O.L. Kudryashov</b>, <b>S.V. Zhenovach</b>, <b>M.A. Zakharov</b>, <b>L.E. Kheifets</b>, and later <b>E.B. Kamenkovich and D.A. Krymov</b>. In Kudryashov's workshop he introduced the discipline he calls <i>action-in-dance</i>. In 2019 he took on his own directing course at the GITIS Musical Theatre faculty.</p>
+          <p>Works as choreographer and stage-movement director with the key Russian directors of his generation: <b>Kirill Serebrennikov</b>, <b>Yuri Butusov</b>, <b>Dmitry Krymov</b>, <b>Viktor Ryzhakov</b>, <b>Ivan Popovski</b>, <b>Mark Zakharov</b>. Directs his own productions at MAT, Theatre of Nations, the Fomenko Workshop, Lenkom. In cinema — <i>Hipsters</i>, <i>The Thaw</i>, <i>Bolshoi</i>, <i>Ice</i>. Five years of work in Norwegian theatre — nominated for the <b>Hedda Award</b>. In 2024, his <a href="https://www.metopera.org/season/in-cinemas/2024-25-season/aida/" target="_blank" rel="noopener">Metropolitan Opera debut — <i>Aida</i></a>, directed by Michael Mayer.</p>
+        </i>
+        <i lang="no">
+          <p><span class="drop">F</span>ødt 26. desember 1978 i Omsk, Sibir. Foreldrene var arkeologer innen eksperimentell arkeologi — folk som gjenoppdager gamle håndverk gjennom fysisk handling. Dette utgangspunktet — handling som måte å forstå verden på — går gjennom hele virket hans.</p>
+          <p>Utdannet ved ballettstudioet til Omsk musikkteater, senere balettartist samme sted. I 1998 kom han inn på GITIS — det russiske teaterinstituttet — til <b>Lilija Talankinas</b> koreografverksted. Under studiene arbeidet han ved Surgut musikk- og dramateater.</p>
+          <p>Fra 2002 underviser han scenisk bevegelse ved GITIS — i verkstedene til <b>O.L. Kudrjasjov</b>, <b>S.V. Zjenovatsj</b>, <b>M.A. Zakharov</b>, <b>L.E. Kheifets</b>, og senere <b>E.B. Kamenkovitsj og D.A. Krymov</b>. I Kudrjasjovs verksted innførte han disiplinen han kaller <i>handling-i-dans</i>. I 2019 fikk han sitt eget regikurs ved GITIS' fakultet for musikkteater.</p>
+          <p>Arbeider som koreograf og sceneregissør med generasjonens viktigste russiske regissører: <b>Kirill Serebrennikov</b>, <b>Jurij Butusov</b>, <b>Dmitrij Krymov</b>, <b>Viktor Ryzjakov</b>, <b>Ivan Popovski</b>, <b>Mark Zakharov</b>. Setter opp egne forestillinger ved MAT, Nasjonenes Teater, Fomenko-verkstedet og Lenkom. I film — <i>Stilyagi</i>, <i>Opptiningen</i>, <i>Bolsjoj</i>, <i>Is</i>. Fem års arbeid i norsk teater — nominert til <b>Heddaprisen</b>. I 2024 debuterte han ved <a href="https://www.metopera.org/season/in-cinemas/2024-25-season/aida/" target="_blank" rel="noopener">Metropolitan Opera — <i>Aida</i></a>, regissert av Michael Mayer.</p>
+        </i>
+      </div>
+
+      <div class="panel-grid">
+        <div class="card">
+          <div class="card-k">ROOT</div>
+          <div class="card-v t">
+            <i lang="ru">Омск — балет — ГИТИС</i>
+            <i lang="en">Omsk — ballet — GITIS</i>
+            <i lang="no">Omsk — ballett — GITIS</i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-k">METHOD</div>
+          <div class="card-v t">
+            <i lang="ru">Движение как драматургия. «Действие в танце».</i>
+            <i lang="en">Movement as dramaturgy. «Action-in-dance».</i>
+            <i lang="no">Bevegelse som dramaturgi. «Handling-i-dans».</i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-k">FAMILY</div>
+          <div class="card-v t">
+            <i lang="ru">Жена Алёна, дочь Саша. Альпинизм. Дуэт <i>Glushkov &amp; Miroliubov</i>.</i>
+            <i lang="en">Wife Alyona, daughter Sasha. Alpinism. Duo <i>Glushkov &amp; Miroliubov</i>.</i>
+            <i lang="no">Kone Aljona, datter Sasja. Fjellklatring. Duoen <i>Glushkov &amp; Miroliubov</i>.</i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-k">GEO</div>
+          <div class="card-v t">
+            <i lang="ru">Москва → Нью-Йорк → Осло → мир</i>
+            <i lang="en">Moscow → New York → Oslo → the world</i>
+            <i lang="no">Moskva → New York → Oslo → verden</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THEATRE -->
+  <section class="page" id="theatre" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <span class="crumb">&gt; system / theatre</span>
+        <span class="crumb">30+ ENTRIES · CLICK TO OPEN</span>
+      </div>
+      <h2 class="h2 t"><i lang="ru">ТЕАТР.СПИСОК</i><i lang="en">THEATRE.LIST</i><i lang="no">TEATER.LIST</i></h2>
+
+      <div class="table">
+        <div class="tr tr--head">
+          <span class="td td-y t"><i lang="ru">ГОД</i><i lang="en">YEAR</i><i lang="no">ÅR</i></span>
+          <span class="td td-t t"><i lang="ru">НАЗВАНИЕ</i><i lang="en">TITLE</i><i lang="no">TITTEL</i></span>
+          <span class="td td-r t"><i lang="ru">РОЛЬ</i><i lang="en">ROLE</i><i lang="no">ROLLE</i></span>
+          <span class="td td-v t"><i lang="ru">СЦЕНА</i><i lang="en">VENUE</i><i lang="no">SCENE</i></span>
+        </div>
+
+        <div class="tr"><span class="td td-y">2018</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/seryozha/" target="_blank" rel="noopener"><i lang="ru">Серёжа</i><i lang="en">Seryozha</i><i lang="no">Serjozja</i></a><span class="td td-r t"><i lang="ru">пластика</i><i lang="en">movement</i><i lang="no">scenisk bevegelse</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ им. Чехова</i><i lang="en">Chekhov MAT</i><i lang="no">Tsjekhov-MAT</i></a></div>
+        <div class="tr"><span class="td td-y">2018</span><a class="td td-t t" href="https://www.afisha.ru/performance/202653/" target="_blank" rel="noopener"><i lang="ru">Гипнос</i><i lang="en">Hypnos</i><i lang="no">Hypnos</i></a><span class="td td-r t"><i lang="ru">режиссёр</i><i lang="en">director</i><i lang="no">regissør</i></span><a class="td td-v t" href="https://praktikatheatre.ru/" target="_blank" rel="noopener"><i lang="ru">Практика / ГИТИС · мастерская Кудряшова</i><i lang="en">Praktika / GITIS · Kudryashov Workshop</i><i lang="no">Praktika / GITIS · Kudrjasjov-verkstedet</i></a></div>
+        <div class="tr"><span class="td td-y">2018</span><a class="td td-t t" href="https://www.fomenko.ru/performance/adams/" target="_blank" rel="noopener"><i lang="ru">Завещание Чарльза Адамса</i><i lang="en">Testament of Charles Addams</i><i lang="no">Charles Addams' testamente</i></a><span class="td td-r t"><i lang="ru">режиссёр</i><i lang="en">director</i><i lang="no">regissør</i></span><a class="td td-v t" href="https://fomenki.ru" target="_blank" rel="noopener"><i lang="ru">Мастерская П. Фоменко</i><i lang="en">Fomenko Workshop</i><i lang="no">Fomenko-verkstedet</i></a></div>
+        <div class="tr"><span class="td td-y">2018</span><a class="td td-t t" href="https://theatreofnations.ru/performances" target="_blank" rel="noopener"><i lang="ru">Му-му</i><i lang="en">Mumu</i><i lang="no">Mumu</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://theatreofnations.ru" target="_blank" rel="noopener"><i lang="ru">Театр Наций · реж. Д. Крымов</i><i lang="en">Theatre of Nations · dir. D. Krymov</i><i lang="no">Nasjonenes Teater · reg. D. Krymov</i></a></div>
+        <div class="tr"><span class="td td-y">2017</span><a class="td td-t t" href="https://theatreofnations.ru/performances/sinyaya-sinyaya-ptitsa" target="_blank" rel="noopener"><i lang="ru">Синяя синяя птица</i><i lang="en">The Blue Blue Bird</i><i lang="no">Den blå blå fuglen</i></a><span class="td td-r t"><i lang="ru">режиссёр, либреттист</i><i lang="en">director, librettist</i><i lang="no">regissør, librettist</i></span><a class="td td-v t" href="https://theatreofnations.ru" target="_blank" rel="noopener"><i lang="ru">Театр Наций</i><i lang="en">Theatre of Nations</i><i lang="no">Nasjonenes Teater</i></a></div>
+        <div class="tr"><span class="td td-y">2016</span><a class="td td-t t" href="https://www.fomenki.ru/director/present/glushkov/" target="_blank" rel="noopener"><i lang="ru">Сон в летнюю ночь</i><i lang="en">A Midsummer Night's Dream</i><i lang="no">En midtsommernattsdrøm</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://fomenki.ru" target="_blank" rel="noopener"><i lang="ru">Мастерская Фоменко · реж. И. Поповски</i><i lang="en">Fomenko Workshop · dir. I. Popovski</i><i lang="no">Fomenko-verkstedet · reg. I. Popovski</i></a></div>
+        <div class="tr"><span class="td td-y">2016</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/prince/" target="_blank" rel="noopener"><i lang="ru">Спящий принц</i><i lang="en">The Sleeping Prince</i><i lang="no">Den sovende prinsen</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ · реж. Р. Самгин</i><i lang="en">Chekhov MAT · dir. R. Samgin</i><i lang="no">Tsjekhov-MAT · reg. R. Samgin</i></a></div>
+        <div class="tr"><span class="td td-y">2016</span><a class="td td-t" href="https://mxat.ru/repertuar/show/dreamworks/" target="_blank" rel="noopener">Dreamworks</a><span class="td td-r t"><i lang="ru">балетмейстер</i><i lang="en">ballet master</i><i lang="no">ballettmester</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ · реж. В. Рыжаков</i><i lang="en">Chekhov MAT · dir. V. Ryzhakov</i><i lang="no">Tsjekhov-MAT · reg. V. Ryzjakov</i></a></div>
+        <div class="tr"><span class="td td-y">2015</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/illusion/" target="_blank" rel="noopener"><i lang="ru">Иллюзии</i><i lang="en">Illusions</i><i lang="no">Illusjoner</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ · реж. В. Рыжаков</i><i lang="en">Chekhov MAT · dir. V. Ryzhakov</i><i lang="no">Tsjekhov-MAT · reg. V. Ryzjakov</i></a></div>
+        <div class="tr"><span class="td td-y">2014</span><a class="td td-t t" href="https://www.afisha.ru/performance/vse-o-zolushke-101489/" target="_blank" rel="noopener"><i lang="ru">Всё о Золушке</i><i lang="en">All About Cinderella</i><i lang="no">Alt om Askepott</i></a><span class="td td-r t"><i lang="ru">режиссёр / хореограф</i><i lang="en">director / choreographer</i><i lang="no">regissør / koreograf</i></span><a class="td td-v t" href="https://mdmoscow.ru/" target="_blank" rel="noopener"><i lang="ru">Театр Мюзикла</i><i lang="en">Moscow Musical Theatre</i><i lang="no">Moskvas Musikalteater</i></a></div>
+        <div class="tr"><span class="td td-y">2014</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/drunk/" target="_blank" rel="noopener"><i lang="ru">Пьяные</i><i lang="en">Drunks</i><i lang="no">Fyllikene</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ · реж. В. Рыжаков</i><i lang="en">Chekhov MAT · dir. V. Ryzhakov</i><i lang="no">Tsjekhov-MAT · reg. V. Ryzjakov</i></a></div>
+        <div class="tr"><span class="td td-y">2012</span><a class="td td-t t" href="https://www.fomenko.ru/archive/sailors/" target="_blank" rel="noopener"><i lang="ru">Моряки и шлюхи</i><i lang="en">Sailors and Whores</i><i lang="no">Sjømenn og horer</i></a><span class="td td-r t"><i lang="ru">режиссёр</i><i lang="en">director</i><i lang="no">regissør</i></span><a class="td td-v t" href="https://fomenki.ru" target="_blank" rel="noopener"><i lang="ru">Мастерская Фоменко</i><i lang="en">Fomenko Workshop</i><i lang="no">Fomenko-verkstedet</i></a></div>
+        <div class="tr"><span class="td td-y">2012</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/argentina/" target="_blank" rel="noopener"><i lang="ru">Он в Аргентине</i><i lang="en">He Is in Argentina</i><i lang="no">Han er i Argentina</i></a><span class="td td-r t"><i lang="ru">балетмейстер</i><i lang="en">ballet master</i><i lang="no">ballettmester</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ · реж. Д. Брусникин</i><i lang="en">Chekhov MAT · dir. D. Brusnikin</i><i lang="no">Tsjekhov-MAT · reg. D. Brusnikin</i></a></div>
+        <div class="tr"><span class="td td-y">2011</span><a class="td td-t" href="https://lenkom.ru/shows/12" target="_blank" rel="noopener">Peer Gynt</a><span class="td td-r t"><i lang="ru">со-режиссёр</i><i lang="en">co-director</i><i lang="no">medregissør</i></span><a class="td td-v t" href="https://lenkom.ru" target="_blank" rel="noopener"><i lang="ru">Ленком · с М. Захаровым</i><i lang="en">Lenkom · with M. Zakharov</i><i lang="no">Lenkom · med M. Zakharov</i></a></div>
+        <div class="tr"><span class="td td-y">2011</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/belosnezhka/" target="_blank" rel="noopener"><i lang="ru">Белоснежка и семь гномов</i><i lang="en">Snow White &amp; the Seven Dwarfs</i><i lang="no">Snøhvit og de sju dvergene</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ им. Чехова</i><i lang="en">Chekhov MAT</i><i lang="no">Tsjekhov-MAT</i></a></div>
+        <div class="tr"><span class="td td-y">2010</span><a class="td td-t t" href="https://www.fomenko.ru/archive/kovcheg/" target="_blank" rel="noopener"><i lang="ru">Ковчег / Гвидон</i><i lang="en">The Ark / Gvidon</i><i lang="no">Arken / Gvidon</i></a><span class="td td-r t"><i lang="ru">режиссёр · Золотая Маска 2011</i><i lang="en">director · Golden Mask 2011</i><i lang="no">regissør · Gullmasken 2011</i></span><a class="td td-v t" href="https://fomenki.ru" target="_blank" rel="noopener"><i lang="ru">Мастерская Фоменко · эксперимент</i><i lang="en">Fomenko Workshop · experimental</i><i lang="no">Fomenko-verkstedet · eksperimentell</i></a></div>
+        <div class="tr"><span class="td td-y">2010</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/damned_and_killed/" target="_blank" rel="noopener"><i lang="ru">Прокляты и убиты</i><i lang="en">Cursed and Killed</i><i lang="no">Forbannet og drept</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://mxat.ru" target="_blank" rel="noopener"><i lang="ru">МХТ · реж. В. Рыжаков</i><i lang="en">Chekhov MAT · dir. V. Ryzhakov</i><i lang="no">Tsjekhov-MAT · reg. V. Ryzjakov</i></a></div>
+        <div class="tr"><span class="td td-y">2005</span><a class="td td-t t" href="https://www.mbronnaya.ru/" target="_blank" rel="noopener"><i lang="ru">Мисс Жюли</i><i lang="en">Miss Julie</i><i lang="no">Frøken Julie</i></a><span class="td td-r t"><i lang="ru">постановщик</i><i lang="en">director</i><i lang="no">regissør</i></span><a class="td td-v t" href="https://www.mbronnaya.ru/" target="_blank" rel="noopener"><i lang="ru">Театр на Малой Бронной</i><i lang="en">Malaya Bronnaya Theatre</i><i lang="no">Teater på Malaja Bronnaja</i></a></div>
+        <div class="tr"><span class="td td-y">2003</span><a class="td td-t t" href="https://mayakovsky.ru/" target="_blank" rel="noopener"><i lang="ru">Иллюзион</i><i lang="en">The Illusion</i><i lang="no">Illusjonen</i></a><span class="td td-r t"><i lang="ru">постановщик</i><i lang="en">director</i><i lang="no">regissør</i></span><a class="td td-v t" href="https://mayakovsky.ru" target="_blank" rel="noopener"><i lang="ru">Театр им. Маяковского</i><i lang="en">Mayakovsky Theatre</i><i lang="no">Majakovskij-teatret</i></a></div>
+        <div class="tr"><span class="td td-y">—</span><a class="td td-t t" href="https://www.fomenki.ru/director/present/glushkov/" target="_blank" rel="noopener"><i lang="ru">Алиса в Зазеркалье · Пять вечеров · Олимпия</i><i lang="en">Alice Through the Looking-Glass · Five Evenings · Olympia</i><i lang="no">Alice i speillandet · Fem kvelder · Olympia</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://fomenki.ru" target="_blank" rel="noopener"><i lang="ru">Мастерская Фоменко</i><i lang="en">Fomenko Workshop</i><i lang="no">Fomenko-verkstedet</i></a></div>
+        <div class="tr"><span class="td td-y">—</span><a class="td td-t t" href="https://mxat.ru/repertuar/show/master/" target="_blank" rel="noopener"><i lang="ru">Мастер и Маргарита · Шинель · Кролик Эдвард</i><i lang="en">The Master and Margarita · The Overcoat · Edward the Rabbit</i><i lang="no">Mesteren og Margarita · Kappen · Kaninen Edward</i></a><span class="td td-r t"><i lang="ru">балетмейстер</i><i lang="en">ballet master</i><i lang="no">ballettmester</i></span><a class="td td-v t" href="https://mxat.ru/authors/choreography/glushkov/" target="_blank" rel="noopener"><i lang="ru">МХТ им. Чехова</i><i lang="en">Chekhov MAT</i><i lang="no">Tsjekhov-MAT</i></a></div>
+      </div>
+
+      <div class="legend t">
+        <i lang="ru"><span>↑↓ навигация</span>&nbsp;·&nbsp;<span>клик — открыть спектакль</span>&nbsp;·&nbsp;<span>▼ прокрутка</span></i>
+        <i lang="en"><span>↑↓ navigate</span>&nbsp;·&nbsp;<span>click · open production</span>&nbsp;·&nbsp;<span>▼ scroll</span></i>
+        <i lang="no"><span>↑↓ naviger</span>&nbsp;·&nbsp;<span>klikk · åpne forestilling</span>&nbsp;·&nbsp;<span>▼ bla</span></i>
+      </div>
+
+      <!-- NORWAY / INTERNATIONAL -->
+      <div class="norway" id="norway">
+        <div>
+          <div class="norway-flag">★ NORGE · INTERNATIONAL</div>
+          <div class="norway-title">NORWAY<br>TRACK</div>
+          <div class="norway-sub t">
+            <i lang="ru">Пять лет работы в норвежском театре. Номинация на <b>Hedda</b> (2012) за «специальный художественный вклад» — хореография в «Мизантропе» (Rogaland) и «Black Rider» (Hålogaland). Работал с режиссёром Сигрид Стрём Рейбо, премьеры в Норвежской национальной опере и Nationaltheatret в Осло.</i>
+            <i lang="en">Five years of work in Norwegian theatre. Nominated for the <b>Hedda Award</b> (2012) for «special artistic contribution» — choreography in <i>Misantropen</i> (Rogaland) and <i>Black Rider</i> (Hålogaland). Collaborated with director Sigrid Strøm Reibo, with premieres at the Norwegian National Opera and Nationaltheatret Oslo.</i>
+            <i lang="no">Fem år i norsk teater. Nominert til <b>Heddaprisen</b> (2012) for «særlig kunstnerisk bidrag» — koreografi i <i>Misantropen</i> (Rogaland Teater) og <i>Black Rider</i> (Hålogaland Teater). Samarbeidet med regissør Sigrid Strøm Reibo, premierer på Den Norske Opera og Nationaltheatret.</i>
+          </div>
+          <div class="norway-date">Oslo · Stavanger · Tromsø · Bergen</div>
+        </div>
+        <div>
+          <div class="table">
+            <div class="tr tr--head">
+              <span class="td td-y t"><i lang="ru">ГОД</i><i lang="en">YEAR</i><i lang="no">ÅR</i></span>
+              <span class="td td-t t"><i lang="ru">НАЗВАНИЕ</i><i lang="en">TITLE</i><i lang="no">TITTEL</i></span>
+              <span class="td td-r t"><i lang="ru">РОЛЬ</i><i lang="en">ROLE</i><i lang="no">ROLLE</i></span>
+              <span class="td td-v t"><i lang="ru">СЦЕНА</i><i lang="en">VENUE</i><i lang="no">SCENE</i></span>
+            </div>
+            <div class="tr"><span class="td td-y">2018</span><a class="td td-t" href="https://www.nationaltheatret.no/en/about-us/organisation/creatives/oleg-glusjkov/" target="_blank" rel="noopener">Dido &amp; Aeneas</a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v" href="https://www.nationaltheatret.no/en/" target="_blank" rel="noopener">Nationaltheatret, Oslo</a></div>
+            <div class="tr"><span class="td td-y">2014</span><a class="td td-t" href="https://www.operaen.no/en/Productions/peer-gynt-opera/" target="_blank" rel="noopener">Peer Gynt</a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://www.operaen.no/en/" target="_blank" rel="noopener"><i lang="ru">Норвежская национальная опера · реж. Sigrid Strøm Reibo</i><i lang="en">Norwegian National Opera · dir. Sigrid Strøm Reibo</i><i lang="no">Den Norske Opera &amp; Ballett · reg. Sigrid Strøm Reibo</i></a></div>
+            <div class="tr"><span class="td td-y">2012</span><a class="td td-t" href="https://rogalandteater.no/" target="_blank" rel="noopener">Misantropen</a><span class="td td-r t"><i lang="ru">хореография · ном. Hedda</i><i lang="en">choreography · Hedda nom.</i><i lang="no">koreografi · Hedda-nom.</i></span><a class="td td-v" href="https://rogalandteater.no/" target="_blank" rel="noopener">Rogaland Teater, Stavanger</a></div>
+            <div class="tr"><span class="td td-y">2012</span><a class="td td-t" href="https://ht.no/" target="_blank" rel="noopener">Black Rider</a><span class="td td-r t"><i lang="ru">хореография · ном. Hedda</i><i lang="en">choreography · Hedda nom.</i><i lang="no">koreografi · Hedda-nom.</i></span><a class="td td-v" href="https://ht.no/" target="_blank" rel="noopener">Hålogaland Teater, Tromsø</a></div>
+            <div class="tr"><span class="td td-y">—</span><a class="td td-t t" href="https://www.nationaltheatret.no/en/about-us/organisation/creatives/oleg-glusjkov/" target="_blank" rel="noopener"><i lang="ru">проекты 2010-х</i><i lang="en">projects of the 2010s</i><i lang="no">prosjekter på 2010-tallet</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><span class="td td-v"><a href="https://www.dns.no/" target="_blank" rel="noopener">Den Nationale Scene</a> · <a href="https://www.detnorsketeatret.no/" target="_blank" rel="noopener">Det Norske Teatret</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILM -->
+  <section class="page" id="film" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <span class="crumb">&gt; system / film</span>
+        <span class="crumb">FEATURE &amp; TV · CLICK TO OPEN</span>
+      </div>
+      <h2 class="h2 t"><i lang="ru">КИНО.СПИСОК</i><i lang="en">FILM.LIST</i><i lang="no">FILM.LIST</i></h2>
+
+      <div class="cards">
+        <a class="film" href="https://www.kinopoisk.ru/film/395690/" target="_blank" rel="noopener">
+          <div class="film-year">2008</div>
+          <h3 class="film-title t"><i lang="ru">Стиляги</i><i lang="en">Hipsters</i><i lang="no">Stilyagi</i></h3>
+          <div class="film-dir t"><i lang="ru">реж. В. Тодоровский</i><i lang="en">dir. V. Todorovsky</i><i lang="no">reg. V. Todorovskij</i></div>
+          <div class="film-role t"><i lang="ru">хореограф-постановщик</i><i lang="en">choreographer</i><i lang="no">koreograf</i></div>
+          <div class="film-note t"><i lang="ru">8 наград «Золотой орёл» и «Ника» · Кинопоиск ▶</i><i lang="en">8 Golden Eagle / Nika awards · Kinopoisk ▶</i><i lang="no">8 Golden Eagle / Nika-priser · Kinopoisk ▶</i></div>
+        </a>
+        <a class="film" href="https://www.kinopoisk.ru/series/713333/" target="_blank" rel="noopener">
+          <div class="film-year">2013</div>
+          <h3 class="film-title t"><i lang="ru">Оттепель</i><i lang="en">The Thaw</i><i lang="no">Opptiningen</i></h3>
+          <div class="film-dir t"><i lang="ru">реж. В. Тодоровский · ТВ-сериал</i><i lang="en">dir. V. Todorovsky · TV series</i><i lang="no">reg. V. Todorovskij · TV-serie</i></div>
+          <div class="film-role t"><i lang="ru">хореография · Кинопоиск ▶</i><i lang="en">choreography · Kinopoisk ▶</i><i lang="no">koreografi · Kinopoisk ▶</i></div>
+        </a>
+        <a class="film" href="https://www.kinopoisk.ru/film/841830/" target="_blank" rel="noopener">
+          <div class="film-year">2015</div>
+          <h3 class="film-title t"><i lang="ru">Парень с нашего кладбища</i><i lang="en">The Guy from Our Cemetery</i><i lang="no">Gutten fra vår kirkegård</i></h3>
+          <div class="film-dir t"><i lang="ru">реж. И. и А. Чижиковы / А. Першин</i><i lang="en">dir. I. &amp; A. Chizhikov / A. Pershin</i><i lang="no">reg. I. &amp; A. Tsjizjikov / A. Persjin</i></div>
+          <div class="film-role t"><i lang="ru">пластика · Кинопоиск ▶</i><i lang="en">movement · Kinopoisk ▶</i><i lang="no">scenisk bevegelse · Kinopoisk ▶</i></div>
+        </a>
+        <a class="film" href="https://www.kinopoisk.ru/film/843784/" target="_blank" rel="noopener">
+          <div class="film-year">2015</div>
+          <h3 class="film-title t"><i lang="ru">Самый лучший день</i><i lang="en">The Very Best Day</i><i lang="no">Den aller beste dagen</i></h3>
+          <div class="film-dir t"><i lang="ru">реж. Ж. Крыжовников</i><i lang="en">dir. Zh. Kryzhovnikov</i><i lang="no">reg. Zj. Kryzjovnikov</i></div>
+          <div class="film-role t"><i lang="ru">хореография · Кинопоиск ▶</i><i lang="en">choreography · Kinopoisk ▶</i><i lang="no">koreografi · Kinopoisk ▶</i></div>
+        </a>
+        <a class="film film--accent" href="https://www.kinopoisk.ru/film/841472/" target="_blank" rel="noopener">
+          <div class="film-year">2017</div>
+          <h3 class="film-title t"><i lang="ru">Большой</i><i lang="en">Bolshoi</i><i lang="no">Bolsjoj</i></h3>
+          <div class="film-dir t"><i lang="ru">реж. В. Тодоровский</i><i lang="en">dir. V. Todorovsky</i><i lang="no">reg. V. Todorovskij</i></div>
+          <div class="film-role t"><i lang="ru">хореограф-постановщик</i><i lang="en">choreographer</i><i lang="no">koreograf</i></div>
+          <div class="film-note t">
+            <i lang="ru">Балетный фильм — главный хореографический вклад в кино 2010-х · Кинопоиск ▶</i>
+            <i lang="en">Ballet film — his principal choreographic contribution to 2010s cinema · Kinopoisk ▶</i>
+            <i lang="no">Ballettfilm — hans viktigste koreografiske bidrag til film på 2010-tallet · Kinopoisk ▶</i>
+          </div>
+        </a>
+        <a class="film" href="https://www.kinopoisk.ru/film/900052/" target="_blank" rel="noopener">
+          <div class="film-year">2018</div>
+          <h3 class="film-title t"><i lang="ru">Лёд</i><i lang="en">Ice</i><i lang="no">Is</i></h3>
+          <div class="film-dir t"><i lang="ru">реж. О. Трофим</i><i lang="en">dir. O. Trofim</i><i lang="no">reg. O. Trofim</i></div>
+          <div class="film-role t"><i lang="ru">хореография (совм. с Е. Масленниковой) · Кинопоиск ▶</i><i lang="en">choreography (with E. Maslennikova) · Kinopoisk ▶</i><i lang="no">koreografi (sammen med E. Maslennikova) · Kinopoisk ▶</i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPERA -->
+  <section class="page" id="opera" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <span class="crumb">&gt; system / opera</span>
+        <span class="crumb sb-blink-soft">NEW · 2024/25</span>
+      </div>
+      <h2 class="h2 t"><i lang="ru">ОПЕРА.СПИСОК</i><i lang="en">OPERA.LIST</i><i lang="no">OPERA.LIST</i></h2>
+
+      <a class="met" href="https://www.metopera.org/season/in-cinemas/2024-25-season/aida/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:grid">
+        <div class="met-l">
+          <div class="met-flag">THE · MET · OPERA · NYC ▶</div>
+          <div class="met-title">AIDA</div>
+          <div class="met-sub t">
+            <i lang="ru">режиссёр Майкл Майер · хореография Олег Глушков</i>
+            <i lang="en">dir. Michael Mayer · choreography Oleg Glushkov</i>
+            <i lang="no">reg. Michael Mayer · koreografi Oleg Glusjkov</i>
+          </div>
+          <div class="met-date t">
+            <i lang="ru">премьера — 31.12.2024, Metropolitan Opera, Нью-Йорк · дебют в доме</i>
+            <i lang="en">premiere — 31.12.2024, Metropolitan Opera, New York · house debut</i>
+            <i lang="no">premiere — 31.12.2024, Metropolitan Opera, New York · husdebut</i>
+          </div>
+        </div>
+        <div class="met-r t">
+          <i lang="ru">
+            <p>«Оперный театр — это завоз. Странно, что оба жанра называются театром — настолько они разные». Работа начиналась с идеи бродвейского мюзикла по «Стилягам»; после встречи с Майклом Майером переросла в «Аиду» для Метрополитена. Пандемия сдвинула премьеру на пять лет.</p>
+            <p>Пресса отметила «пластичные, волнообразные танцы женского ансамбля» — узнаваемый почерк Глушкова в операх Верди.</p>
+            <p class="quote">«Если спросите — быть максимально подготовленным или придумывать на репетиции, то, конечно, второе».</p>
+            <div class="met-src">→ metopera.org · <a href="https://theblueprint.ru/culture/theatre/oleg-glushkov-interview" target="_blank" rel="noopener" onclick="event.stopPropagation()">The Blueprint · 24.12.2024</a> · <a href="https://www.operabase.com/productions/aida-238714/31-december-2024/en" target="_blank" rel="noopener" onclick="event.stopPropagation()">Operabase</a></div>
+          </i>
+          <i lang="en">
+            <p>«Opera is delivered, not made on the floor. Strange that both are called theatre — they're that different». The project began as a Broadway musical of <i>Stilyagi</i>; after a meeting with Michael Mayer it grew into <i>Aida</i> for The Met. The pandemic pushed the premiere by five years.</p>
+            <p>The press noted «graceful, undulating dances for the women's chorus» — the signature of Glushkov's writing inside a Verdi score.</p>
+            <p class="quote">«If you ask me — to be fully prepared, or to invent in rehearsal — then of course, the second».</p>
+            <div class="met-src">→ metopera.org · <a href="https://theblueprint.ru/culture/theatre/oleg-glushkov-interview" target="_blank" rel="noopener" onclick="event.stopPropagation()">The Blueprint · 24.12.2024</a> · <a href="https://www.operabase.com/productions/aida-238714/31-december-2024/en" target="_blank" rel="noopener" onclick="event.stopPropagation()">Operabase</a></div>
+          </i>
+          <i lang="no">
+            <p>«Opera leveres — den lages ikke på gulvet. Rart at begge kalles teater — så forskjellige er de». Prosjektet startet som en Broadway-musikal basert på <i>Stilyagi</i>; etter møtet med Michael Mayer ble det <i>Aida</i> for The Met. Pandemien utsatte premieren i fem år.</p>
+            <p>Pressen framhevet «yndefulle, bølgende danser for kvinnekoret» — Glusjkovs signatur inni et Verdi-partitur.</p>
+            <p class="quote">«Hvis du spør meg — å være fullt forberedt, eller å finne på i prøvesalen — så selvsagt det andre».</p>
+            <div class="met-src">→ metopera.org · <a href="https://theblueprint.ru/culture/theatre/oleg-glushkov-interview" target="_blank" rel="noopener" onclick="event.stopPropagation()">The Blueprint · 24.12.2024</a> · <a href="https://www.operabase.com/productions/aida-238714/31-december-2024/en" target="_blank" rel="noopener" onclick="event.stopPropagation()">Operabase</a></div>
+          </i>
+        </div>
+      </a>
+
+      <a class="norway" href="https://www.operaen.no/en/Productions/peer-gynt-opera/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:grid">
+        <div>
+          <div class="norway-flag">★ DEN NORSKE OPERA &amp; BALLETT ▶</div>
+          <div class="norway-title">PEER<br>GYNT</div>
+          <div class="norway-sub t">
+            <i lang="ru">Норвежская национальная опера, 2014. Режиссёр — Сигрид Стрём Рейбо. Глушков — хореография: ибсеновский мир через пластику, первое большое сотрудничество с норвежским театром.</i>
+            <i lang="en">Norwegian National Opera, 2014. Directed by Sigrid Strøm Reibo. Glushkov — choreography: Ibsen's world rendered through movement, his first major Norwegian collaboration.</i>
+            <i lang="no">Den Norske Opera &amp; Ballett, 2014. Regi: Sigrid Strøm Reibo. Glusjkov — koreografi: Ibsens verden gjennom bevegelse, hans første store norske samarbeid.</i>
+          </div>
+          <div class="norway-date">Oslo · 2014</div>
+        </div>
+        <div>
+          <div class="kv">
+            <div class="kv-row"><span class="kv-k t"><i lang="ru">РЕЖИССЁР</i><i lang="en">DIRECTOR</i><i lang="no">REGISSØR</i></span><span class="kv-dots"></span><span class="kv-v">Sigrid Strøm Reibo</span></div>
+            <div class="kv-row"><span class="kv-k t"><i lang="ru">МУЗЫКА</i><i lang="en">MUSIC</i><i lang="no">MUSIKK</i></span><span class="kv-dots"></span><span class="kv-v">Edvard Grieg / Juri Reinvere</span></div>
+            <div class="kv-row"><span class="kv-k t"><i lang="ru">СЦЕНА</i><i lang="en">VENUE</i><i lang="no">SCENE</i></span><span class="kv-dots"></span><span class="kv-v">Den Norske Opera &amp; Ballett, Oslo</span></div>
+            <div class="kv-row"><span class="kv-k t"><i lang="ru">ОТЗЫВ</i><i lang="en">REVIEW</i><i lang="no">OMTALE</i></span><span class="kv-dots"></span><span class="kv-v t"><i lang="ru">«Opera, My Love» · «событие сезона»</i><i lang="en">«Opera, My Love» · «event of the season»</i><i lang="no">«Opera, My Love» · «sesongens begivenhet»</i></span></div>
+          </div>
+        </div>
+      </a>
+
+      <div class="table">
+        <div class="tr tr--head">
+          <span class="td td-y t"><i lang="ru">ГОД</i><i lang="en">YEAR</i><i lang="no">ÅR</i></span>
+          <span class="td td-t t"><i lang="ru">НАЗВАНИЕ</i><i lang="en">TITLE</i><i lang="no">TITTEL</i></span>
+          <span class="td td-r t"><i lang="ru">РОЛЬ</i><i lang="en">ROLE</i><i lang="no">ROLLE</i></span>
+          <span class="td td-v t"><i lang="ru">СЦЕНА</i><i lang="en">VENUE</i><i lang="no">SCENE</i></span>
+        </div>
+        <div class="tr"><span class="td td-y">2024</span><a class="td td-t t" href="https://www.metopera.org/season/in-cinemas/2024-25-season/aida/" target="_blank" rel="noopener"><i lang="ru">Аида</i><i lang="en">Aida</i><i lang="no">Aida</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v" href="https://www.metopera.org/" target="_blank" rel="noopener">Metropolitan Opera, New York</a></div>
+        <div class="tr"><span class="td td-y">2018</span><a class="td td-t" href="https://www.nationaltheatret.no/en/about-us/organisation/creatives/oleg-glusjkov/" target="_blank" rel="noopener">Dido &amp; Aeneas</a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v" href="https://www.nationaltheatret.no/" target="_blank" rel="noopener">Nationaltheatret, Oslo</a></div>
+        <div class="tr"><span class="td td-y">2014</span><a class="td td-t" href="https://www.operaen.no/en/Productions/peer-gynt-opera/" target="_blank" rel="noopener">Peer Gynt</a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><a class="td td-v t" href="https://www.operaen.no/" target="_blank" rel="noopener"><i lang="ru">Норвежская национальная опера, Осло</i><i lang="en">Norwegian National Opera, Oslo</i><i lang="no">Den Norske Opera &amp; Ballett, Oslo</i></a></div>
+        <div class="tr"><span class="td td-y">—</span><a class="td td-t t" href="https://www.operabase.com/artists/oleg-glushkov-26576/en" target="_blank" rel="noopener"><i lang="ru">Чародейка</i><i lang="en">The Enchantress</i><i lang="no">Trollkvinnen</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><span class="td td-v t"><i lang="ru">опера (Россия)</i><i lang="en">opera (Russia)</i><i lang="no">opera (Russland)</i></span></div>
+        <div class="tr"><span class="td td-y">—</span><a class="td td-t t" href="https://www.operabase.com/artists/oleg-glushkov-26576/en" target="_blank" rel="noopener"><i lang="ru">Русалка</i><i lang="en">Rusalka</i><i lang="no">Rusalka</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><span class="td td-v t"><i lang="ru">опера (Россия)</i><i lang="en">opera (Russia)</i><i lang="no">opera (Russland)</i></span></div>
+        <div class="tr"><span class="td td-y">—</span><a class="td td-t t" href="https://www.operabase.com/artists/oleg-glushkov-26576/en" target="_blank" rel="noopener"><i lang="ru">Пиковая дама</i><i lang="en">The Queen of Spades</i><i lang="no">Spar dame</i></a><span class="td td-r t"><i lang="ru">хореография</i><i lang="en">choreography</i><i lang="no">koreografi</i></span><span class="td td-v t"><i lang="ru">опера (Россия)</i><i lang="en">opera (Russia)</i><i lang="no">opera (Russland)</i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHING -->
+  <section class="page" id="teaching" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <span class="crumb">&gt; system / teaching</span>
+        <span class="crumb">GITIS · since 2002</span>
+      </div>
+      <h2 class="h2 t"><i lang="ru">ПЕДАГОГИКА.LOG</i><i lang="en">TEACHING.LOG</i><i lang="no">UNDERVISNING.LOG</i></h2>
+
+      <div class="prose t">
+        <i lang="ru">
+          <p>С 2002 года преподаёт в <a href="https://gitis.net/" target="_blank" rel="noopener">ГИТИС</a> сценическое движение. Через его руки прошли все «кудряши»; позже работал с курсами Женовача, Каменьковича-Крымова, Захарова, Хейфеца. В 2019 году набрал собственный курс на факультете музыкального театра.</p>
+          <p>Его метод в мастерской Кудряшова получил имя — <b>«действие в танце»</b>: пластика как драматургия, физическое действие как носитель смысла наравне со словом.</p>
+        </i>
+        <i lang="en">
+          <p>He has taught stage movement at <a href="https://gitis.net/" target="_blank" rel="noopener">GITIS</a> since 2002. All the «Kudryashov kids» have come through his class; later he worked with the workshops of Zhenovach, Kamenkovich-Krymov, Zakharov, Kheifets. In 2019 he took on his own directing course at the Musical Theatre faculty.</p>
+          <p>His method inside Kudryashov's workshop has a name: <b>action-in-dance</b> — movement as dramaturgy, physical action as a bearer of meaning on equal footing with the word.</p>
+        </i>
+        <i lang="no">
+          <p>Har undervist i scenisk bevegelse ved <a href="https://gitis.net/" target="_blank" rel="noopener">GITIS</a> siden 2002. Alle «Kudrjasjov-kullene» har gått gjennom klassen hans; senere også Zjenovatsj, Kamenkovitsj-Krymov, Zakharov og Kheifets. I 2019 fikk han sitt eget regikurs ved fakultetet for musikkteater.</p>
+          <p>Metoden hans i Kudrjasjovs verksted har fått et navn: <b>handling-i-dans</b> — bevegelse som dramaturgi, fysisk handling som meningsbærer på linje med ordet.</p>
+        </i>
+      </div>
+
+      <div class="table">
+        <div class="tr tr--head">
+          <span class="td td-y t"><i lang="ru">ГОДЫ</i><i lang="en">YEARS</i><i lang="no">ÅR</i></span>
+          <span class="td td-t t"><i lang="ru">МАСТЕРСКАЯ</i><i lang="en">WORKSHOP</i><i lang="no">VERKSTED</i></span>
+          <span class="td td-r t"><i lang="ru">ПРЕДМЕТ</i><i lang="en">SUBJECT</i><i lang="no">FAG</i></span>
+          <span class="td td-v t"><i lang="ru">ФАКУЛЬТЕТ</i><i lang="en">FACULTY</i><i lang="no">FAKULTET</i></span>
+        </div>
+        <div class="tr"><span class="td td-y">2002→</span><a class="td td-t t" href="https://gitis.net/" target="_blank" rel="noopener"><i lang="ru">О.Л. Кудряшов</i><i lang="en">O.L. Kudryashov</i><i lang="no">O.L. Kudrjasjov</i></a><span class="td td-r t"><i lang="ru">действие в танце · сценическое движение</i><i lang="en">action-in-dance · stage movement</i><i lang="no">handling-i-dans · scenisk bevegelse</i></span><span class="td td-v t"><i lang="ru">режиссёрский</i><i lang="en">directing</i><i lang="no">regi</i></span></div>
+        <div class="tr"><span class="td td-y">2002→</span><a class="td td-t t" href="https://gitis.net/" target="_blank" rel="noopener"><i lang="ru">С.В. Женовач</i><i lang="en">S.V. Zhenovach</i><i lang="no">S.V. Zjenovatsj</i></a><span class="td td-r t"><i lang="ru">сценическое движение</i><i lang="en">stage movement</i><i lang="no">scenisk bevegelse</i></span><span class="td td-v t"><i lang="ru">режиссёрский</i><i lang="en">directing</i><i lang="no">regi</i></span></div>
+        <div class="tr"><span class="td td-y">2002→</span><a class="td td-t t" href="https://gitis.net/" target="_blank" rel="noopener"><i lang="ru">Е.Б. Каменькович / Д.А. Крымов</i><i lang="en">E.B. Kamenkovich / D.A. Krymov</i><i lang="no">E.B. Kamenkovitsj / D.A. Krymov</i></a><span class="td td-r t"><i lang="ru">сценическое движение</i><i lang="en">stage movement</i><i lang="no">scenisk bevegelse</i></span><span class="td td-v t"><i lang="ru">режиссёрский</i><i lang="en">directing</i><i lang="no">regi</i></span></div>
+        <div class="tr"><span class="td td-y">2002→</span><a class="td td-t t" href="https://gitis.net/" target="_blank" rel="noopener"><i lang="ru">М.А. Захаров</i><i lang="en">M.A. Zakharov</i><i lang="no">M.A. Zakharov</i></a><span class="td td-r t"><i lang="ru">сценическое движение</i><i lang="en">stage movement</i><i lang="no">scenisk bevegelse</i></span><span class="td td-v t"><i lang="ru">режиссёрский</i><i lang="en">directing</i><i lang="no">regi</i></span></div>
+        <div class="tr"><span class="td td-y">2002→</span><a class="td td-t t" href="https://gitis.net/" target="_blank" rel="noopener"><i lang="ru">Л.Е. Хейфец</i><i lang="en">L.E. Kheifets</i><i lang="no">L.E. Kheifets</i></a><span class="td td-r t"><i lang="ru">сценическое движение</i><i lang="en">stage movement</i><i lang="no">scenisk bevegelse</i></span><span class="td td-v t"><i lang="ru">режиссёрский</i><i lang="en">directing</i><i lang="no">regi</i></span></div>
+        <div class="tr"><span class="td td-y">2019→</span><a class="td td-t t" href="https://gitis.net/" target="_blank" rel="noopener"><i lang="ru">Собственный курс О. Глушкова</i><i lang="en">O. Glushkov's own course</i><i lang="no">Glusjkovs eget kurs</i></a><span class="td td-r t"><i lang="ru">режиссура / артисты</i><i lang="en">directing / actors</i><i lang="no">regi / skuespillere</i></span><span class="td td-v t"><i lang="ru">факультет музыкального театра</i><i lang="en">Musical Theatre faculty</i><i lang="no">fakultet for musikkteater</i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS -->
+  <section class="page" id="press" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <span class="crumb">&gt; system / press</span>
+        <span class="crumb">EXTERNAL LINKS</span>
+      </div>
+      <h2 class="h2 t"><i lang="ru">ПРЕССА.LOG</i><i lang="en">PRESS.LOG</i><i lang="no">PRESSE.LOG</i></h2>
+
+      <ul class="links">
+        <li><a href="https://theblueprint.ru/culture/theatre/oleg-glushkov-interview" target="_blank" rel="noopener"><span class="ln-n">001</span><span class="ln-t t"><i lang="ru">Глушков — о премьере «Аиды» в Метрополитен Опере и будущем театра</i><i lang="en">Glushkov on the premiere of «Aida» at the Met and the future of theatre</i><i lang="no">Glusjkov om «Aida»-premieren på Met og teatrets framtid</i></span><span class="ln-m">The Blueprint · 24.12.2024 · Е. Смородинова</span></a></li>
+        <li><a href="https://daily.afisha.ru/culture/7548-ischezaet-to-chego-v-evropeyskom-teatre-uzhe-davno-net/" target="_blank" rel="noopener"><span class="ln-n">002</span><span class="ln-t t"><i lang="ru">«Исчезает то, чего в европейском театре уже давно нет» — о новой несвободе</i><i lang="en">«What's disappearing is something European theatre lost long ago»</i><i lang="no">«Det som forsvinner er noe europeisk teater mistet for lengst»</i></span><span class="ln-m">Афиша Daily · 30.11.2017</span></a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%93%D0%BB%D1%83%D1%88%D0%BA%D0%BE%D0%B2,_%D0%9E%D0%BB%D0%B5%D0%B3_%D0%98%D0%B3%D0%BE%D1%80%D0%B5%D0%B2%D0%B8%D1%87" target="_blank" rel="noopener"><span class="ln-n">003</span><span class="ln-t t"><i lang="ru">Глушков, Олег Игоревич — биография</i><i lang="en">Oleg Glushkov — Wikipedia biography</i><i lang="no">Oleg Glusjkov — Wikipedia-biografi</i></span><span class="ln-m">Wikipedia · ru</span></a></li>
+        <li><a href="https://mxat.ru/authors/choreography/glushkov/" target="_blank" rel="noopener"><span class="ln-n">004</span><span class="ln-t t"><i lang="ru">Олег Глушков — хореография, пластика</i><i lang="en">Oleg Glushkov — choreography and movement</i><i lang="no">Oleg Glusjkov — koreografi og bevegelse</i></span><span class="ln-m t"><i lang="ru">МХТ им. А.П. Чехова</i><i lang="en">Chekhov MAT</i><i lang="no">Tsjekhov-MAT</i></span></a></li>
+        <li><a href="https://theatreofnations.ru/people/glushkov-oleg-1" target="_blank" rel="noopener"><span class="ln-n">005</span><span class="ln-t t"><i lang="ru">Олег Глушков — досье</i><i lang="en">Oleg Glushkov — profile</i><i lang="no">Oleg Glusjkov — profil</i></span><span class="ln-m t"><i lang="ru">Театр Наций</i><i lang="en">Theatre of Nations</i><i lang="no">Nasjonenes Teater</i></span></a></li>
+        <li><a href="https://www.fomenki.ru/director/present/glushkov/" target="_blank" rel="noopener"><span class="ln-n">006</span><span class="ln-t t"><i lang="ru">Олег Глушков — труппа режиссёров</i><i lang="en">Oleg Glushkov — directors' company</i><i lang="no">Oleg Glusjkov — regissører</i></span><span class="ln-m t"><i lang="ru">Мастерская П. Фоменко</i><i lang="en">Fomenko Workshop</i><i lang="no">Fomenko-verkstedet</i></span></a></li>
+        <li><a href="https://ramt.ru/staff/deystvuyushchie-sotrudniki/khoreografy/oleg-glushkov/" target="_blank" rel="noopener"><span class="ln-n">007</span><span class="ln-t t"><i lang="ru">Олег Глушков — хореографы</i><i lang="en">Oleg Glushkov — choreographers</i><i lang="no">Oleg Glusjkov — koreografer</i></span><span class="ln-m">RAMT</span></a></li>
+        <li><a href="https://lenkom.ru/people/glushkov-oleg" target="_blank" rel="noopener"><span class="ln-n">008</span><span class="ln-t t"><i lang="ru">Олег Глушков — постановщики</i><i lang="en">Oleg Glushkov — directors</i><i lang="no">Oleg Glusjkov — regissører</i></span><span class="ln-m">Lenkom</span></a></li>
+        <li><a href="https://teatrpushkin.ru/persona/detail/glushkov-oleg/" target="_blank" rel="noopener"><span class="ln-n">009</span><span class="ln-t t"><i lang="ru">Олег Глушков — биография, награды</i><i lang="en">Oleg Glushkov — biography, awards</i><i lang="no">Oleg Glusjkov — biografi, priser</i></span><span class="ln-m t"><i lang="ru">Театр им. А.С. Пушкина</i><i lang="en">Pushkin Theatre</i><i lang="no">Pusjkin-teatret</i></span></a></li>
+        <li><a href="https://www.kino-teatr.ru/teatr/activist/363885/bio/" target="_blank" rel="noopener"><span class="ln-n">010</span><span class="ln-t t"><i lang="ru">Досье и спектакли</i><i lang="en">Profile and productions</i><i lang="no">Profil og forestillinger</i></span><span class="ln-m">Kino-Teatr.ru</span></a></li>
+        <li><a href="https://www.afisha.ru/people/oleg-glushkov-297810/performances/" target="_blank" rel="noopener"><span class="ln-n">011</span><span class="ln-t t"><i lang="ru">Афиша спектаклей Олега Глушкова</i><i lang="en">Glushkov's performance calendar</i><i lang="no">Glusjkovs forestillingskalender</i></span><span class="ln-m">Afisha</span></a></li>
+        <li><a href="https://www.nationaltheatret.no/en/about-us/organisation/creatives/oleg-glusjkov/" target="_blank" rel="noopener"><span class="ln-n">012</span><span class="ln-t">Oleg Glusjkov — creatives</span><span class="ln-m">Nationaltheatret, Oslo</span></a></li>
+        <li><a href="https://www.operabase.com/artists/oleg-glushkov-26576/en" target="_blank" rel="noopener"><span class="ln-n">013</span><span class="ln-t">Oleg Glushkov — choreographer archive</span><span class="ln-m">Operabase</span></a></li>
+        <li><a href="https://www.goldenmask.ru/pers_1331.html" target="_blank" rel="noopener"><span class="ln-n">014</span><span class="ln-t t"><i lang="ru">Олег Глушков — страница премии</i><i lang="en">Oleg Glushkov — award profile</i><i lang="no">Oleg Glusjkov — prisprofil</i></span><span class="ln-m t"><i lang="ru">Золотая Маска</i><i lang="en">Golden Mask</i><i lang="no">Gullmasken</i></span></a></li>
+        <li><a href="https://www.imdb.com/name/nm3816039/" target="_blank" rel="noopener"><span class="ln-n">015</span><span class="ln-t">Oleg Glushkov — filmography</span><span class="ln-m">IMDb</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXIT -->
+  <section class="page" id="exit" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <span class="crumb">&gt; system / exit</span>
+        <span class="crumb sb-blink-soft">SAVE &amp; REBOOT</span>
+      </div>
+      <h2 class="h2 t"><i lang="ru">ВЫХОД.CFG</i><i lang="en">EXIT.CFG</i><i lang="no">AVSLUTT.CFG</i></h2>
+
+      <div class="t">
+        <pre class="ascii" lang="ru">
+╔══════════════════════════════════════════════════════════════╗
+║   СОХРАНИТЬ ИЗМЕНЕНИЯ И ВЫЙТИ ?                              ║
+║                                                              ║
+║   [Y] ДА   —  посмотреть спектакль                           ║
+║   [N] НЕТ  —  продолжить листать                             ║
+║                                                              ║
+║   Ближайшие показы и репертуар:                              ║
+║   · mxat.ru        · theatreofnations.ru                     ║
+║   · fomenki.ru     · lenkom.ru                               ║
+║   · ramt.ru        · metopera.org (AIDA 2024/25)             ║
+╚══════════════════════════════════════════════════════════════╝</pre>
+        <pre class="ascii" lang="en">
+╔══════════════════════════════════════════════════════════════╗
+║   SAVE CHANGES AND EXIT SETUP ?                              ║
+║                                                              ║
+║   [Y] YES  —  go see a performance                           ║
+║   [N] NO   —  keep browsing                                  ║
+║                                                              ║
+║   Upcoming shows and repertoire:                             ║
+║   · mxat.ru        · theatreofnations.ru                     ║
+║   · fomenki.ru     · lenkom.ru                               ║
+║   · ramt.ru        · metopera.org (AIDA 2024/25)             ║
+╚══════════════════════════════════════════════════════════════╝</pre>
+        <pre class="ascii" lang="no">
+╔══════════════════════════════════════════════════════════════╗
+║   LAGRE ENDRINGER OG AVSLUTT ?                               ║
+║                                                              ║
+║   [Y] JA   —  gå og se en forestilling                       ║
+║   [N] NEI  —  bla videre                                     ║
+║                                                              ║
+║   Kommende forestillinger og repertoar:                      ║
+║   · mxat.ru        · theatreofnations.ru                     ║
+║   · fomenki.ru     · lenkom.ru                               ║
+║   · ramt.ru        · metopera.org (AIDA 2024/25)             ║
+╚══════════════════════════════════════════════════════════════╝</pre>
+      </div>
+
+      <div class="kv">
+        <div class="kv-row"><span class="kv-k t"><i lang="ru">КОНТАКТ</i><i lang="en">CONTACT</i><i lang="no">KONTAKT</i></span><span class="kv-dots"></span><span class="kv-v t"><i lang="ru">через администрации театров</i><i lang="en">via theatre administrations</i><i lang="no">gjennom teateradministrasjoner</i></span></div>
+        <div class="kv-row"><span class="kv-k t"><i lang="ru">ПРЕПОДАВАНИЕ</i><i lang="en">TEACHING</i><i lang="no">UNDERVISNING</i></span><span class="kv-dots"></span><span class="kv-v t"><i lang="ru"><a href="https://gitis.net/" target="_blank" rel="noopener">gitis.net</a> · мастерская Глушкова</i><i lang="en"><a href="https://gitis.net/" target="_blank" rel="noopener">gitis.net</a> · Glushkov's workshop</i><i lang="no"><a href="https://gitis.net/" target="_blank" rel="noopener">gitis.net</a> · Glusjkovs verksted</i></span></div>
+        <div class="kv-row"><span class="kv-k">SITE</span><span class="kv-dots"></span><span class="kv-v">glushkov.art · draft v.2026.04</span></div>
+      </div>
+
+      <div class="venues">
+        <div class="venues-head t"><i lang="ru">// ПРЯМЫЕ ССЫЛКИ НА ТЕАТРЫ</i><i lang="en">// DIRECT LINKS TO VENUES</i><i lang="no">// DIREKTE LENKER TIL TEATRE</i></div>
+        <div class="venues-grid">
+          <a href="https://mxat.ru" target="_blank" rel="noopener">МХТ им. Чехова</a>
+          <a href="https://theatreofnations.ru" target="_blank" rel="noopener">Театр Наций</a>
+          <a href="https://fomenki.ru" target="_blank" rel="noopener">Мастерская Фоменко</a>
+          <a href="https://lenkom.ru" target="_blank" rel="noopener">Ленком</a>
+          <a href="https://ramt.ru" target="_blank" rel="noopener">РАМТ</a>
+          <a href="https://mayakovsky.ru" target="_blank" rel="noopener">Театр Маяковского</a>
+          <a href="https://www.mbronnaya.ru/" target="_blank" rel="noopener">Малая Бронная</a>
+          <a href="https://mdmoscow.ru/" target="_blank" rel="noopener">Театр Мюзикла</a>
+          <a href="https://praktikatheatre.ru/" target="_blank" rel="noopener">Практика</a>
+          <a href="https://gitis.net/" target="_blank" rel="noopener">ГИТИС</a>
+          <a href="https://www.metopera.org/season/in-cinemas/2024-25-season/aida/" target="_blank" rel="noopener">MET Opera · Aida</a>
+          <a href="https://www.operaen.no/en/" target="_blank" rel="noopener">Den Norske Opera</a>
+          <a href="https://www.nationaltheatret.no/en/" target="_blank" rel="noopener">Nationaltheatret Oslo</a>
+          <a href="https://rogalandteater.no/" target="_blank" rel="noopener">Rogaland Teater</a>
+          <a href="https://ht.no/" target="_blank" rel="noopener">Hålogaland Teater</a>
+          <a href="https://www.dns.no/" target="_blank" rel="noopener">Den Nationale Scene</a>
+          <a href="https://www.detnorsketeatret.no/" target="_blank" rel="noopener">Det Norske Teatret</a>
+        </div>
+      </div>
+
+      <div class="sig t">
+        <i lang="ru"><span>// сайт собран как BIOS-Setup</span><span>// источники: Wikipedia · МХТ · Театр Наций · Фоменки · Ленком · Blueprint · Афиша · Nationaltheatret · Operabase · Кинопоиск · IMDb</span></i>
+        <i lang="en"><span>// site built as a BIOS Setup</span><span>// sources: Wikipedia · MAT · Theatre of Nations · Fomenko · Lenkom · Blueprint · Afisha · Nationaltheatret · Operabase · Kinopoisk · IMDb</span></i>
+        <i lang="no"><span>// bygget som en BIOS-Setup</span><span>// kilder: Wikipedia · MAT · Nasjonenes Teater · Fomenko · Lenkom · Blueprint · Afisja · Nationaltheatret · Operabase · Kinopoisk · IMDb</span></i>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="statusbar statusbar--bot">
+  <span class="hk"><b>F1</b>·<span class="t"><i lang="ru">ГЛАВНОЕ</i><i lang="en">MAIN</i><i lang="no">HOVED</i></span></span>
+  <span class="hk"><b>F2</b>·BIO</span>
+  <span class="hk"><b>F3</b>·<span class="t"><i lang="ru">ТЕАТР</i><i lang="en">THEATRE</i><i lang="no">TEATER</i></span></span>
+  <span class="hk"><b>F4</b>·FILM</span>
+  <span class="hk"><b>F5</b>·OPERA</span>
+  <span class="hk"><b>F6</b>·<span class="t"><i lang="ru">ПЕДАГ.</i><i lang="en">TEACH</i><i lang="no">UNDERV.</i></span></span>
+  <span class="hk"><b>F7</b>·<span class="t"><i lang="ru">ПРЕССА</i><i lang="en">PRESS</i><i lang="no">PRESSE</i></span></span>
+  <span class="hk"><b>F10</b>·<span class="t"><i lang="ru">ВЫХОД</i><i lang="en">EXIT</i><i lang="no">AVSLUTT</i></span></span>
+  <span class="hk hk--r"><b>↑↓</b>·<span class="t"><i lang="ru">ПРОКРУТКА</i><i lang="en">SCROLL</i><i lang="no">RULL</i></span></span>
+  <span class="hk hk--r sb-blink-soft">_</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
